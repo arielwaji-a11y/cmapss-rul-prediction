@@ -62,6 +62,10 @@ cmapss-rul-prediction/
 
 ## Exécution
 
+> **Python 3.10 à 3.12 requis.** PyTorch n'est pas toujours disponible pour les versions plus récentes de Python : avec une version trop récente, `pip install` échoue avec « No matching distribution found for torch ». Sous Windows, si plusieurs versions sont installées, crée l'environnement avec `py -3.12 -m venv .venv`.
+>
+> Sous Windows PowerShell, si l'activation est bloquée (« l'exécution de scripts est désactivée »), lance d'abord `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` (valable pour la fenêtre en cours seulement).
+
 ```bash
 git clone https://github.com/arielwaji-a11y/cmapss-rul-prediction.git
 cd cmapss-rul-prediction
