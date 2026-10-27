@@ -1,0 +1,21 @@
+# Données NASA : téléchargées par data/download_data.py, jamais versionnées
+data/*.txt
+data/*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Expériences et modèles entraînés
+mlruns/
+mlartifacts/
+reports/*.pt
+
+# Système
+.DS_Store
+Thumbs.db
