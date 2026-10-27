@@ -23,13 +23,13 @@
 
 ## Démarche
 
-1. **Exploration** — durée de vie, évolution des capteurs, corrélations, retrait des capteurs constants justifié par leur variance.
+1. **Exploration** : durée de vie, évolution des capteurs, corrélations, retrait des capteurs constants justifié par leur variance.
 2. **Cible RUL plafonnée** (125 cycles, choix testé entre 120 et 130).
-3. **Préparation** — normalisation apprise sur l'entraînement seulement ; pour FD002/FD004, regroupement des 6 conditions de vol (k-moyennes) et normalisation par condition.
-4. **Validation sans fuite** — séparation **par moteur** (`GroupKFold`) ; le jeu de test officiel n'est utilisé qu'une fois.
-5. **Modèles** — référence naïve, régression linéaire, forêt aléatoire, XGBoost, puis **LSTM et CNN 1D en PyTorch** sur fenêtres de 30 cycles.
-6. **Interprétation** — valeurs SHAP, erreur selon la RUL réelle, intervalle d'incertitude par MC Dropout.
-7. **Analyse de rentabilisation** — comparaison de trois stratégies (intervalle fixe, prédictive, idéale) et choix du seuil qui minimise le coût total.
+3. **Préparation** : normalisation apprise sur l'entraînement seulement ; pour FD002/FD004, regroupement des 6 conditions de vol (k-moyennes) et normalisation par condition.
+4. **Validation sans fuite** : séparation **par moteur** (`GroupKFold`) ; le jeu de test officiel n'est utilisé qu'une fois.
+5. **Modèles** : référence naïve, régression linéaire, forêt aléatoire, XGBoost, puis **LSTM et CNN 1D en PyTorch** sur fenêtres de 30 cycles.
+6. **Interprétation** : valeurs SHAP, erreur selon la RUL réelle, intervalle d'incertitude par MC Dropout.
+7. **Analyse de rentabilisation** : comparaison de trois stratégies (intervalle fixe, prédictive, idéale) et choix du seuil qui minimise le coût total.
 
 ### Métriques
 
@@ -63,7 +63,7 @@ cmapss-rul-prediction/
 ## Exécution
 
 ```bash
-git clone https://github.com/<ton-compte>/cmapss-rul-prediction.git
+git clone https://github.com/arielwaji-a11y/cmapss-rul-prediction.git
 cd cmapss-rul-prediction
 python -m venv .venv && source .venv/bin/activate    # Windows : .venv\Scripts\activate
 pip install -r requirements.txt
