@@ -1,9 +1,9 @@
 # Prédiction de la durée de vie restante de turboréacteurs (NASA C-MAPSS)
 
-> Projet de fin de formation — Certificat en science des données, TÉLUQ  
+> Projet de fin de formation : Certificat en science des données, TÉLUQ  
 > Auteur : Ariel Manfouo Waji
 
-À partir des capteurs d'un turboréacteur, prédire combien de cycles de vol il lui reste avant défaillance (**RUL**, *Remaining Useful Life*), puis traduire cette prédiction en **décision de maintenance chiffrée**.
+À partir des capteurs d'un turboréacteur, prédire le nombre de cycles de vol restants avant défaillance (**RUL**, *Remaining Useful Life*), puis traduire cette prédiction en une **décision de maintenance chiffrée**.
 
 ## Résultats clés
 
@@ -62,9 +62,10 @@ cmapss-rul-prediction/
 
 ## Exécution
 
-> **Python 3.10 à 3.12 requis.** PyTorch n'est pas toujours disponible pour les versions plus récentes de Python : avec une version trop récente, `pip install` échoue avec « No matching distribution found for torch ». Sous Windows, si plusieurs versions sont installées, crée l'environnement avec `py -3.12 -m venv .venv`.
+> **Avis aux utilisateurs**
+> **Python 3.10 à 3.12 requis.** Veuillez noter que PyTorch n'est pas toujours disponible pour les versions les plus récentes de Python : avec une version trop récente, `pip install` échoue avec le message « No matching distribution found for torch ». Sous Windows, si plusieurs versions sont installées, crée l'environnement avec `py -3.12 -m venv .venv`.
 >
-> Sous Windows PowerShell, si l'activation est bloquée (« l'exécution de scripts est désactivée »), lance d'abord `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` (valable pour la fenêtre en cours seulement).
+> Sous Windows PowerShell, si l'activation est bloquée (« l'exécution de scripts est désactivée »), lance d'abord `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` (valable uniquement pour la fenêtre en cours).
 
 ```bash
 git clone https://github.com/arielwaji-a11y/cmapss-rul-prediction.git
